@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import pageReducer from '../stores/pageSlice';
+import jokeReducer from '../stores/jokeSlice';
 
 export default configureStore({
   reducer: {
-    counter: counterReducer,
+    page: pageReducer,
+    joke: jokeReducer,
   },
 });
