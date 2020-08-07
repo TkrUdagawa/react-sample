@@ -34,6 +34,11 @@ export default function Navbar(props) {
                     >
                         joke
                     </Link>
+                    <Link component={RouterLink} to="/file" color="inherit" className={classes.title}
+                    onClick= {() => dispatch(setPage({page: "file"}))}
+                    >
+                        file
+                    </Link>                    
             </Toolbar>
         </AppBar>
     );

@@ -5,6 +5,7 @@ import About from "./About";
 import UserList from "./UserList";
 import User from "./User";
 import Joke from "./Joke";
+import FileUpload from "./FileUpload";
 
 export default function Main(props) {
     return(
@@ -25,7 +26,9 @@ export default function Main(props) {
                 <Route path="/joke">
                     <Joke />
                 </Route>
-
+                <Route path="/file">
+                    <FileUpload />
+                </Route>
             </Switch>
         </div>
     );
